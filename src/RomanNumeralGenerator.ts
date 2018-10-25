@@ -3,7 +3,8 @@ export class RomanNumeralGenerator {
     const numerals = {
       1: "I",
       5: "V",
-      10: "X"
+      10: "X",
+      50: "L"
     };
     return numerals[number];
   }
