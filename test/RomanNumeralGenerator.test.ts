@@ -20,6 +20,8 @@ describe("RomanNumeralGenerator", () => {
     expect(roman.generate(10)).to.equal("X");
   });
 
+  it("should convert 20 to XX");
+
   it("should convert 50 to L", () => {
     expect(roman.generate(50)).to.equal("L");
   });
@@ -35,4 +37,6 @@ describe("RomanNumeralGenerator", () => {
   it("should convert 1000 to M", () => {
     expect(roman.generate(1000)).to.equal("M");
   });
+
+  it("should convert 3999 to MMCMXCIX");
 });
