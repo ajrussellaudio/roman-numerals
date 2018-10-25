@@ -41,4 +41,24 @@ describe("RomanNumeralGenerator", () => {
 
     it("should convert 3999 to MMCMXCIX");
   });
+
+  describe("getSortedNumeralKeys", () => {
+    let roman;
+
+    beforeEach(() => {
+      roman = new RomanNumeralGenerator();
+    });
+
+    it("should return array of valid numeral keys, sorted in descending order", () => {
+      expect(roman.getSortedNumeralKeys()).to.eql([
+        1000,
+        500,
+        100,
+        50,
+        10,
+        5,
+        1
+      ]);
+    });
+  });
 });

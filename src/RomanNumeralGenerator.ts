@@ -12,4 +12,10 @@ export class RomanNumeralGenerator {
   generate(number: number) {
     return this.numerals[number];
   }
+
+  getSortedNumeralKeys() {
+    return Object.keys(this.numerals)
+      .map(numeral => parseInt(numeral))
+      .sort((a, b) => b - a);
+  }
 }
