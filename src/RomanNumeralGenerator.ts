@@ -1,5 +1,5 @@
 export class RomanNumeralGenerator {
-  numerals = {
+  numerals: object = {
     1000: "M",
     500: "D",
     100: "C",
@@ -9,11 +9,11 @@ export class RomanNumeralGenerator {
     1: "I"
   };
 
-  generate(number: number) {
+  generate(number: number): string {
     return this.numerals[number];
   }
 
-  getSortedNumeralKeys() {
+  getSortedNumeralKeys(): number[] {
     return Object.keys(this.numerals)
       .map(numeral => parseInt(numeral))
       .sort((a, b) => b - a);
