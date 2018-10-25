@@ -32,5 +32,7 @@ describe("RomanNumeralGenerator", () => {
     expect(roman.generate(500)).to.equal("D");
   });
 
-  it("should convert 1000 to M");
+  it("should convert 1000 to M", () => {
+    expect(roman.generate(1000)).to.equal("M");
+  });
 });
