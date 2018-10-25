@@ -2,13 +2,16 @@ import { RomanNumeralGenerator } from "../src/RomanNumeralGenerator";
 import { expect } from "chai";
 
 describe("RomanNumeralGenerator", () => {
-  let romanNumeralGenerator;
+  let roman;
 
   beforeEach(() => {
-    romanNumeralGenerator = new RomanNumeralGenerator();
+    roman = new RomanNumeralGenerator();
   });
 
-  it("should convert 1 to I");
+  it("should convert 1 to I", () => {
+    expect(roman.generate(1)).to.equal("I");
+  });
+
   it("should convert 5 to V");
   it("should convert 10 to X");
   it("should convert 50 to L");

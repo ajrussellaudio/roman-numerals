@@ -1,3 +1,5 @@
 export class RomanNumeralGenerator {
-  generate(number: number) {}
+  generate(number: number) {
+    return "I";
+  }
 }
